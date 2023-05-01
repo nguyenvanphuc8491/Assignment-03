@@ -1,0 +1,126 @@
+/* Thêm màu nền cho các lớp goals, team, timeline, scopes,primarys */
+.goals,
+.team,
+.timelines,
+.scopes,
+.primarys {
+  background-color: #dee2e6;
+  padding: 10px 5px;
+}
+/* Đặt màu chữ cho các thẻ h3, căn chỉnh và thêm viền */
+h3 {
+  color: blue;
+  padding: 10px;
+  border-bottom: 1px solid #495057;
+}
+/* Căn chỉnh lớp goal-x */
+.goal-x {
+  position: relative;
+  padding-left: 60px;
+  border-bottom: 1px solid #495057;
+}
+/* Thêm icon vào trước lớp goal-x bởi phần tử giả và căn giữa theo trục y */
+.goal-x::before {
+  content: url(../images/finish-flag.png);
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-left: -40px;
+}
+
+.member {
+  position: relative;
+  padding-left: 60px;
+}
+/* Thêm icon vào trước lớp member bởi phần tử giả và căn giữa theo trục y */
+.member::before {
+  content: url(../images/user.png);
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-left: -45px;
+}
+/* Căn chỉnh nội dung các lớp */
+.scope-x {
+  padding-left: 20px;
+}
+.primary {
+  position: relative;
+  padding-left: 60px;
+}
+/* Thêm icon vào trước lớp primary bởi phần tử giả và căn giữa theo trục y */
+.primary::before {
+  content: url(../images/hoicham.png);
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-left: -45px;
+}
+/* Căn chỉnh và thêm viền dưới màu xanh nét đứt cho khối timeline  */
+.timeline {
+  position: relative;
+  padding-left: 60px;
+  border-bottom: 1px dashed #15aabf;
+}
+/* Đặt bộ đếm cho khối có lớp timelines */
+.timelines {
+  counter-reset: my-sec-counter;
+}
+/* Thêm hình tròn số thứ tự tăng dần vào phía trước với phần tử giả */
+.timeline h5::before {
+  /* Tiến hành đếm số thẻ h5 trong lớp timelines, số tự động tăng dần và thêm số 0 đằng trước */
+  counter-increment: my-sec-counter;
+  content: "0" counter(my-sec-counter); /* Thêm số 0 vào trước bộ đếm */
+  /* Đặt kích thước tạo khối tròn, thêm viền, bo tròn viền và thêm màu nền khối tròn */
+  padding: 8px;
+  border: 2px solid #868e96;
+  border-radius: 50%;
+  background-color: #9775fa;
+  color: white;
+  /* Căn giữa hình tròn vừa tạo theo trục y */
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-left: -50px;
+}
+/* Các thuộc tính thay đổi áp dụng cho màn hình tablet */
+@media only screen and (max-width: 991px) {
+  /* Căn chỉnh lại icon trong khối goal-x với màn hình tablet */
+  .goal-x::before {
+    content: url(../images/finish-flag.png);
+    position: absolute;
+    right: 50%;
+    margin-top: -40px;
+  }
+  .goal-x {
+    padding-top: 60px;
+  }
+  /* Chỉnh lại vị trí icon trong khối có lớp member với màn hình tablet */
+  .member::before {
+    content: url(../images/user.png);
+    position: absolute;
+    right: 50%;
+    margin-top: -30px;
+  }
+  .member {
+    padding-top: 30px;
+  }
+  /* Chỉnh lại vị trí icon trong khối có lớp primary với màn hình tablet */
+  .primary::before {
+    content: url(../images/hoicham.png);
+    position: absolute;
+    right: 50%;
+    margin-top: -40px;
+  }
+  .primary {
+    padding-top: 70px;
+  }
+  /* Chỉnh lại vị trí phần tử giả bộ đếm trên màn hình tablet */
+  .timeline h5::before {
+    margin-left: 0;
+    margin-top: -40px;
+  }
+  .timeline {
+    padding-top: 70px;
+  }
+}

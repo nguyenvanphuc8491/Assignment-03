@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/font.css"/>
+    <link rel="stylesheet" href="./css/laptop.css"/>    
+    <link rel="stylesheet" href="./css/tablet.css"/>
+    <link rel="stylesheet" href="./css/mobile.css"/>   
+  </head>
+  <body>
+    <!-- Phần banner -->
+    <div id="banner" style="padding: 50px">
+      <div class="text-banner">
+        <h1>Nguyễn Văn Phúc</h1>
+        <span>Full Stack Developer</span>
+      </div>
+    </div>
+    <!-- Thanh nav-bar: sử dụng các thẻ có cấu trúc để thuận lợi cho việc tạo kiểu CSS -->
+    <section id="nav-bar">
+      <nav class="navbar-container">
+        <a href="#" class="thongtin"><i class="icon-user"></i>Thông tin</a>
+        <a class="vien" href="#"><i class="icon-doc-text-inv"></i> Lý lịch</a>
+        <div class="ho-ten">
+          <img src="images/DSC_4138-01-01.jpeg" alt="ảnh đại diện">
+        </div>
+        <a href="#"><i class="icon-mail-alt"></i> Chứng chỉ</a>
+        <a href="#"><i class="icon-star-1"></i> Dự Án</a>
+      </nav>
+    </section>
+<!-- Khối thông tin nghề nghiệp -->
+    <section id="about" class="bg-grey">
+      <div class="container-thongtincanhan">
+        <div id="target">
+          <h1 class="section-title">Mục tiêu nghề nghiệp</h1>
+          <p>
+            Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
+            của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+            <b>Fullstack Developer</b>, có thể vận dụng những kiến thức đã được
+            trau dồi và không ngừng học hỏi để phát triển bản thân, cũng như
+            hoàn thành tốt nhất công việc được giao.
+          </p>
+        </div>
+        <div id="personal-info">
+          <h1 class="section-title">Thông tin cá nhân</h1> 
+          <!-- Sử dụng danh sách ul để thể hiện thông tin các nhân -->
+          <ul class="mt-40 info">
+            <li><span>Giới tính</span> : Nam</li>
+            <li><span>Ngày sinh</span> : 08/04/1991</li>
+            <li><span>Điện thoại</span> : (+84) 982897862</li>
+            <li><span>Email</span> : phucnvfx21193@funix.edu.vn</li>
+            <li><span>Địa chỉ</span> : An Bộ, Kinh Môn, Hải Dương</li>
+            <li><span>Website</span> : https://abc.tech</li>
+          </ul>
+          <!-- Sử dụng thẻ div để chứa các thẻ icon -->
+          <div class="icon-thongtin">
+            <i class="icon-twitter"></i>
+            <i class="icon-facebook"></i>
+            <i class="icon-gplus"></i>
+            <i class="icon-linkedin"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Phần kinh nghiệm làm việc: sử dụng các thẻ có cấu trúc để thuận lợi cho việc tạo kiểu CSS -->
+    <section id="job-info">
+      <div class="container-nghenghiep">
+        <div class="kinhnghiem">
+          <div class="grid-icon">
+            <h1>Kinh nghiệm</h1>
+            <i class="bieutuong ic-toolbox"></i>
+          </div>
+          <h4>Công ty Y</h4>
+          <p class="thoigian">05/2022- <span>Hiện tại</span></p>
+          <!-- Sử dụng các thẻ, các danh sách ul để thể hiện nội dung các kinh nghiệm làm việc -->
+          <ul>
+            <li>Full Stack Developer</li>
+            <li>
+              Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu đã có.
+            </li>
+            <li>
+              Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL
+            </li>
+          </ul>
+          <h4>Công ty X</h4>
+          <p class="thoigian">06/2021- 04/2022</p>
+          <p>Web Designer</p>
+          <ul>
+            <li>Thiết kế Website dựa trên yêu cầu của khách hàng.</li>
+            <li>Sử dụng các công cụ: Figma, Canva, PTS.</li>
+          </ul>
+        </div>
+        <!-- Phần thông tin về học vấn -->
+        <div class="hocvan">
+          <div class="grid-icon">
+            <h1>Học vấn</h1>
+            <i class="bieutuong ic-pencil"></i>
+          </div>
+          <h4>FUNIX</h4>
+          <p class="thoigian">06/2021- 05/2022</p>
+          <ul>
+            <li>Tốt nghiệp chứng chỉ doanh nghiệp nhánh Fullstack.</li>
+            <li>GPA: 9/10</li>
+          </ul>
+          <h4>Cử nhân- ĐH FPT</h4>
+          <p class="thoigian">08/2016- 07/2019</p>
+          <ul>
+            <li>Chuyên ngành: Kỹ thuật phần mềm.</li>
+            <li>GPA: 3.2/4</li>
+          </ul>
+          <h4>Đại học Hà Nội</h4>
+          <p class="thoigian">08/2016- 02/2018</p>
+          <ul>
+            <li>Hệ từ xa, Chuyên ngành: Ngôn ngữ Nhật</li>
+            <li>GPA: 2.8/4</li>
+          </ul>
+        </div>
+        <!-- Phần thông tin về các hoạt động -->
+        <div class="hoatdong">
+          <div class="grid-icon">
+            <h1>Hoạt động</h1>
+            <i class="bieutuong ic-toolbox"></i>
+          </div>
+          <h4>FPT Edu Hackathon 2019</h4>
+          <p class="thoigian">03/2019- 05/2019</p>
+          <ul>
+            <li>Giải 3 bảng A</li>
+            <li>Đề tài: Trang web về phân loại rác thải.</li>
+          </ul>
+          <h4>Câu lạc bộ Z</h4>
+          <p class="thoigian">08/2018- 08/2019</p>
+          <ul>
+            <li>Trưởng ban chuyên môn</li>
+          </ul>
+          <h4>Câu lạc bộ Z</h4>
+          <p class="thoigian">08/2016</p>
+          <ul>
+            <li>Hỗ trợ tổ chức tuần lễ văn hóa Việt Nam- Nhật Bản</li>
+          </ul>
+        </div>
+        <!-- Phần thông tin về sở thích cá nhân -->
+        <div class="sothich">
+          <div class="grid-icon">
+            <h1>Sở thích</h1>
+            <i class="bieutuong ic-telescope"></i>
+          </div>
+          <div class="hang-icon">
+            <div class="vien-icon amnhac">
+              <i class="icon ic-megaphone"></i>
+            </div>
+            <p class="am-nhac">Âm nhạc</p>
+
+            <div class="vien-icon choigame">
+              <i class="icon ic-strategy"></i>
+            </div>
+            <p class="choi-game">Chơi game</p>
+
+            <div class="vien-icon dulich">
+              <i class="icon ic-hotairballoon"></i>
+            </div>
+            <p class="du-lich">Du lịch</p>
+            <div class="vien-icon nauan">
+              <i class="icon ic-basket"></i>
+            </div>
+            <p class="nau-an">Nấu ăn</p>
+          </div>
+        </div>
+        <!-- Phần thông tin về ngôn ngữ, trình độ ngoại ngữ -->
+        <div class="ngonngu">
+          <div class="grid-icon">
+            <h1>Ngôn ngữ</h1>
+            <i class="bieutuong ic-mic"></i>
+          </div>
+          <div class="tieng-anh">
+            <p>Tiếng Anh- IELTS 7.0</p>
+             <!-- sử dụng các thẻ span để tạo hộp thang điểm -->
+            <span class="diem1"></span> <span class="diem2"></span
+            ><span class="diem3"></span>
+          </div>
+          <div class="tieng-nhat">
+            <p>Tiếng Nhật- JLPT N4</p>
+            <span class="diem1"></span><span class="diem2"></span
+            ><span class="diem3"></span>
+          </div>
+        </div>
+        <!-- Phần thông tin về các kỹ năng -->
+        <div class="kynang">
+          <div class="grid-icon">
+            <h1>Kỹ năng</h1>
+            <i class="bieutuong ic-tools-2"></i>
+          </div>
+          <div class="html-css">
+            <p>HTML/CSS: Fundamental</p>
+            <!-- sử dụng các thẻ span để tạo hộp thang điểm -->
+            <span class="diem1"></span> <span class="diem2"></span
+            ><span class="diem3"></span>
+          </div>
+          <div class="Javascript">
+            <p>Javascript: Intermediate</p>
+             <!-- sử dụng các thẻ span để tạo hộp thang điểm -->
+            <span class="diem1"></span> <span class="diem2"></span
+            ><span class="diem3"></span>
+          </div>
+          <div class="nodejs">
+            <p>NodeJS: Intermediate</p>
+             <!-- sử dụng các thẻ span để tạo hộp thang điểm -->
+            <span class="diem1"></span> <span class="diem2"></span
+            ><span class="diem3"></span>
+          </div>
+          <div class="bootstrap">
+            <p>Bootstrap 5: Fundamental</p>
+             <!-- sử dụng các thẻ span để tạo hộp thang điểm -->
+            <span class="diem1"></span> <span class="diem2"></span
+            ><span class="diem3"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Phần thông tin về các chứng chỉ.  sử dụng các thẻ có cấu trúc để thuận lợi cho việc tạo kiểu CSS -->
+    <section id="certificate" class="bg-grey">     
+      <div class="container-chungchi">
+        <h1 class="title-chungchi">Chứng chỉ - Giải thưởng</h1>
+        <div class="chung-chi1">   
+          <img src="images/Cert_DBI.png" alt="chứng chỉ 1" />          
+          <ul>
+            <h4>CHỨNG CHỈ LẬP TRÌNH WEB- FUNIX</h4>
+            <li>Chứng chỉ thuộc chương trình CCDN</li>
+            <li>GPA: 8.6</li>
+          </ul>
+        </div>
+        <div class="chung-chi2">  
+          <img src="images/Cert_PRF.png" alt="chứng chỉ 2" />      
+         <ul>
+            <h4>CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT- FUNIX</h4>         
+              <li>Chứng chỉ thuộc chương trình CCDN</li>
+              <li>GPA: 8.9</li>
+            </ul>
+          </div>
+          <div class="chung-chi3">            
+            <img src="images/Cert_WEB.png" alt="chứng chỉ 3" />
+            <ul>
+              <h4>CHỨNG CHỈ THIẾT KẾ DATABASE- FUNIX</h4>
+              <li>Chứng chỉ thuộc chương trình CCDN</li>
+              <li>GPA: 8.0</li>
+            </ul>
+          </div>
+         </div>
+      </div>   
+    </section>
+<!-- Phần thông tin về các dự án đã thực hiện. sử dụng các thẻ có cấu trúc để thuận lợi cho việc tạo kiểu CSS -->
+    <section id="project">
+      <div class="du-an">
+        <h1 class="section-title">Dự án</h1>
+        <div class="cv-canhan">
+          <img class="anh-du-an" src="images/project_1.png" alt="dự án cv cá nhân">
+          <div>
+            <h4>CV CÁ NHÂN</h4>
+          </div>
+          <div class="time-icon">
+            <span>2021</span>
+            <p><i class="icon-user-1"></i>FUNIX</p>
+            <p><i class="icon-lamp"></i>Developer</p>
+          </div>
+          <!-- Sử dụng bảng thể thể hiện nội dung thông tin -->
+            <table>
+              <tr>
+                  <td>Mô tả</td>
+                  <td>Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề nghiệp.</td>
+              </tr>
+              <tr>
+                  <td>Nhiệm vụ</td>
+                  <td>- Phát triển code- Review code- Tối ưu code- Xử lý lỗi</td>
+              </tr>
+              <tr>
+                <td>Công nghệ</td>
+                <td>- HTML, CSS</td>            
+              </tr>
+            </table>
+            <p class="project-charter"><a href="./digital-cv.html">Project Charter</a></p>
+          </div>
+<!-- Thông tin về dự án trang web quản lý thú cưng -->
+      <div class="web-thucung"> 
+        <img class="anh-du-an" src="images/project_2.png" alt="trang web quản lý thú cưng">
+        <div>
+          <h4>TRANG WEB QUẢN LÝ THÚ CƯNG</h4>
+        </div>
+        <div class="time-icon">
+          <span>2021</span>
+          <p><i class="icon-user-1"></i>FUNIX</p>
+          <p><i class="icon-lamp"></i>Developer</p>
+        </div>
+        <table>
+          <tr>
+              <td>Mô tả</td>
+              <td>Ứng dụng giúp quản lý các thông tin của thú cưng như: Cân nặng, giống, tình trạng tiêm chủng,... Bao gồm các chức năng thêm/ sửa/ xóa.</td>
+
+          </tr>
+          <tr>
+              <td>Nhiệm vụ</td>
+              <td>- Phát triển code- Review code- Tối ưu code- Xử lý lỗi</td>
+          </tr>
+          <tr>           
+            <td>Công nghệ</td>
+            <td>- HTML, CSS, Javascript</td>         
+          </tr>
+        </table>
+        <p class="project-charter"><a href="./digital-cv.html">Project Charter</a></p>
+      </div>
+<!-- Thông tin về dự án trang web xem tin tức -->
+      <div class="web-tintuc">
+        <img class="anh-du-an" src="images/project_3.png" alt="trang web xem tin tức">
+        <div>
+          <h4>TRANG WEB XEM TIN TỨC</h4>
+        </div>
+        <div class="time-icon">
+          <span>2021</span>
+          <p><i class="icon-user-1"></i>FUNIX</p>
+          <p><i class="icon-lamp"></i>Developer</p>
+        </div>
+        <!-- Sử dụng bảng để thể hiện nội dung dự án -->
+        <div class="bang">
+        <table>
+          <tr>           
+              <td>Mô tả</td>
+              <td>Trang Web xem tin tức từ nhiều nguồn khác nhau, người dùng có thể tìm kiếm các tin tức dựa theo các từ khóa.</td>          
+          </tr>
+          <tr>          
+              <td>Nhiệm vụ</td>
+              <td>- Phát triển code- Review code- Tối ưu code- Xử lý lỗi</td>           
+          </tr>
+          <tr>         
+            <td>Công nghệ</td>
+            <td>- HTML, CSS, Javascript</td>         
+          </tr>
+        </table>
+        <p class="project-charter"><a href="./digital-cv.html">Project Charter</a></p>
+      </div>
+     </div>
+    </section>
+<!-- Thông tin phần footer của trang -->
+    <section id="footer" class="bg-grey">
+      <div class="container">
+        <ul>
+          <li><i class="icon-facebook-circled"></i>
+            <p>Facebook</p>
+          </li>
+          <li><i class="icon-linkedin-circled"></i>
+            <p>Linkedin</p>
+          </li>
+          <li><i class="icon-github-circled"></i>
+            <p> Github</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

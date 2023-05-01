@@ -1,0 +1,533 @@
+* {
+  margin: 0px;
+}
+/* Đặt độ rộng và các thuộc tính chung cho body */
+html {
+  width: 100vw;
+  font-family: sans-serif;
+  color: #343a40;
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* css cho phần banner, đặt hình nền ảnh cho banner */
+#banner {
+  width: 100vw;
+  height: 300px;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/banner.jpg); /*Đặt hình nền và giảm độ sáng hình nền*/
+  background-size: cover;
+  /* căn giữa ảnh nền khi viewport thay đổi */
+  background-position: center;
+}
+/* css cho phần chữ trong banner */
+.text-banner {
+  text-align: center;
+  color: #fff;
+  /* căn giữa theo chiều dọc cho phần chữ trong banner */
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+/* css thanh menu điều hướng */
+#nav-bar {
+  text-align: center;
+}
+/* Căn giữa các khối theo chiều ngang trong flexbox */
+.navbar-container {
+  display: flex;
+  justify-content: center;
+}
+/* css cho các thẻ a trong thanh điều hướng */
+.navbar-container a {
+  display: inline-block;
+  text-decoration: none; /* bỏ gạch chân cho các thẻ a */
+  color: #343a40;
+  padding: 10px 25px;
+  border-right: 1px solid #ced4da;
+}
+
+/* tô màu cho các icon trong menu */
+.navbar-container i {
+  color: #339af0;
+}
+
+.thongtin {
+  border-left: 1px solid #ced4da;
+}
+.ho-ten {
+  width: 250px;
+  position: relative;
+}
+.ho-ten img {
+  position: absolute;
+  /* bo viền tròn cho ảnh đại diện */
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border: 5px solid #fff; /* tạo viền màu trắng cho ảnh nền*/
+  /* Căn giữa cho ảnh đại diện */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* bỏ viền phải của phần lý lịch trong thanh navbar */
+.navbar-container .vien {
+  border-right: none;
+}
+.bg-grey {
+  background: #f7f7f7;
+}
+/* Tạo grid layout 2 cột cho phần thông tin cá nhân */
+.container-thongtincanhan {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  line-height: 1.7;
+  padding-top: 20;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+/* Định vị 2 khối vào vị trí 2 cột của grid */
+#target {
+  grid-column: 1/2;
+  padding-top: 30px;
+}
+#personal-info {
+  grid-column: 2/3;
+  padding-top: 30px;
+  background: #f1f3f5;
+}
+/* căn chỉnh nội dung trong các grid cell */
+#target p {
+  padding-top: 20px;
+  padding-left: 30px;
+}
+.section-title {
+  padding-left: 30px;
+}
+.info {
+  list-style: none; /*bỏ dấu chấm đầu thẻ li trong danh sách ul*/
+  padding-top: 20px;
+}
+/* in đậm chữ thẻ span */
+#personal-info span {
+  font-weight: bold;
+}
+.icon-thongtin {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  color: #339af0;
+}
+/* CSS phần nghề nghiệp */
+/* Đặt độ rộng thùng chứa 100% khung nhìn để căn giữa khối container-nghenghiep */
+#job-info {
+  width: 100vw;
+}
+
+#job-info li {
+  list-style-type: "- "; /* Thay dấu chấm thành dấu gạch đầu dòng ở thẻ li */
+  margin-left: -30px;
+}
+/* tạo lưới grid gồm 2 cột và 1 hàng, cột 1 chiếm 75%, cột 2 chiếm 25% */
+.grid-icon {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 70px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* căn giữa theo chiều dọc các thẻ h1 trong grid cell */
+.grid-icon h1 {
+  align-self: center;
+}
+/* căn giữa icon theo chiều dọc và ngang trong grid cell  */
+.grid-icon i {
+  align-self: center;
+  justify-self: right;
+}
+/* Đặt kích thước cho icon */
+.bieutuong {
+  font-size: 35px;
+}
+/* Đặt kiểu chữ in nghiêng cho các mốc thời gian */
+.thoigian {
+  font-style: italic;
+}
+/* Tạo grid thông tin nghề nghiệp gồm 3 cột và 2 hàng */
+.container-nghenghiep {
+  display: grid;
+  width: 85vw;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 15px;
+}
+/* Tạo chấm tròn màu xanh trước các thẻ h4 và căn chỉnh đúng vị trí */
+#job-info h4::before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #199cdb;
+  margin-top: 8px;
+  margin-left: -12px;
+}
+/* Căn chỉnh và tạo viền cho phần kinh nghiệm */
+.kinhnghiem {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #ced4da;
+}
+/* Thay dấu chấm bằng dấu gạch đầu dòng cho thẻ li */
+.kinhnghiem li {
+  list-style-type: "- ";
+  margin-left: 0;
+}
+/* CSS cho thẻ span trong phần kinh nghiệm */
+.kinhnghiem span {
+  font-style: italic;
+  display: inline-block;
+  padding: 1px 10px;
+  border-radius: 8px;
+  background-color: #199cdb;
+  color: #f7f7f7;
+}
+/* css phần học vấn, căn chỉnh nội dung */
+.hocvan {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #ced4da;
+}
+/* css phần hoạt động, căn chỉnh nội dung */
+.hoatdong {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #ced4da;
+}
+/* css phần sở thích, căn chỉnh nội dung */
+.sothich {
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #ced4da;
+}
+/* Tạo grid 4 cột, 2 hàng để chứa các mục icon và text */
+.hang-icon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  row-gap: 10px;
+}
+
+/* Chỉnh lại kích thước chữ cho icon */
+.hang-icon p {
+  font-size: 13px;
+}
+/* Đặt vị trí các icon và chữ vào đúng vị trí grid cell đã tạo */
+.amnhac {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.choigame {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.dulich {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.nauan {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+.am-nhac {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.choi-game {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.du-lich {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.nau-an {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+/* Đặt kích thước hình vuông, tạo viền tròn và đổ màu cho icon */
+.vien-icon {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #339af0;
+  border-radius: 50%;
+  color: #339af0;
+  position: relative;
+}
+/* căn icon vào giữa viền */
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Căn chỉnh phần ngôn ngữ */
+.ngonngu {
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #ced4da;
+}
+/* Tạo các khối thang điểm và đặt màu nền cho khối */
+.ngonngu span {
+  display: inline-block;
+  height: 2px;
+  width: 38px;
+  margin: 10px 10px 15px 0;
+  background-color: #868e96;
+}
+/* Đổ màu nền cho thang điểm các môn học */
+.tieng-anh .diem1 {
+  background-color: #199cdb;
+}
+.tieng-anh .diem2 {
+  background-color: #199cdb;
+}
+.tieng-nhat .diem1 {
+  background-color: #199cdb;
+}
+/* Căn chỉnh và tạo viền cho phần kỹ năng */
+.kynang {
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #ced4da;
+}
+/* Tạo thang điểm cho phần kỹ năng và đặt màu nền cho thang điểm các môn */
+.kynang span {
+  display: inline-block;
+  height: 2px;
+  width: 38px;
+  margin: 10px 10px 15px 0;
+  background-color: #868e96;
+}
+.html-css .diem1 {
+  background-color: #199cdb;
+}
+.Javascript .diem1 {
+  background-color: #199cdb;
+}
+.Javascript .diem2 {
+  background-color: #199cdb;
+}
+.nodejs .diem1 {
+  background-color: #199cdb;
+}
+.nodejs .diem2 {
+  background-color: #199cdb;
+}
+.bootstrap .diem1 {
+  background-color: #199cdb;
+}
+
+/* Tạo lưới grid 3 hàng, 2 cột cho mục chứng chỉ- giải thưởng */
+.container-chungchi {
+  width: 85vw;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto;
+  row-gap: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+/* Chỉ định vị trí các khối chứng chỉ vào đúng vị trí grid cell */
+.title-chungchi {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  align-self: end;
+}
+/* Khối chứng chỉ 1 */
+.chung-chi1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  align-self: start;
+  display: flex;
+}
+/* Khối chứng chỉ 2 */
+.chung-chi2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding-left: 10px;
+  align-self: start;
+  display: flex;
+  border-left: 2px solid #d6c08d;
+}
+/* Khối chứng chỉ 3 */
+.chung-chi3 {
+  grid-column: 1/3;
+  grid-row: 3 / 4;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-self: center;
+  border-top: 2px solid #d6c08d;
+  display: flex;
+}
+/* Thay dấu chấm trong list ul thành dấu gạch đầu dòng và căn chỉnh nội dung */
+.container-chungchi ul {
+  list-style: "- ";
+  margin-left: -15px;
+}
+.container-chungchi h4 {
+  margin-left: -12px;
+}
+.container-chungchi img {
+  height: 75px;
+}
+
+/* Khối dự án */
+
+#project {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  width: 100vw;
+}
+/* CSS phần dự án. Tạo lưới grid 3 cột,2 hàng */
+.du-an {
+  width: 85vw;
+  margin: 0 auto;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto; */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 15px;
+}
+/* Chỉ định các khối vào các grid cell */
+.du-an h1 {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  padding-left: 0;
+  align-self: center;
+}
+.cv-canhan {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  border: 1px solid #868e96;
+}
+.web-thucung {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  border: 1px solid #868e96;
+}
+.web-tintuc {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  border: 1px solid #868e96;
+}
+/* CSS các thẻ h4 trong khối dự án, thêm viền trên và dưới thẻ h4 */
+.du-an h4 {
+  padding: 20px 20px;
+  margin-top: -5px;
+  border-top: 1px solid #868e96;
+  border-bottom: 1px solid #868e96;
+}
+/* CSS các khối thời gian và biểu tượng, đặt chúng trên cùng dòng */
+.time-icon {
+  display: flex;
+  padding: 10px 5px;
+}
+.time-icon p {
+  padding-left: 5px;
+}
+/* Tạo viền và đặt màu nền cho các thẻ span */
+.time-icon span {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 20px;
+  color: #f7f7f7;
+  margin: auto 5px;
+  background-color: #199cdb;
+}
+.anh-du-an {
+  width: 100%;
+}
+/* Đặt độ rộng của phần tử td đầu tiên trong bảng là 35% bảng */
+tr td:first-child {
+  width: 30%;
+  padding-left: 5px;
+}
+/* CSS cho bảng */
+table {
+  padding: 10px;
+  border-collapse: collapse;
+  width: 100%;
+  height: auto;
+}
+/* CSS cho các thẻ td trong bảng và thêm viền */
+table td {
+  width: 100vw;
+  padding-top: 10px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #868e96;
+}
+
+/* CSS cho khối footer */
+
+#footer {
+  width: 100vw;
+  text-align: center;
+}
+
+/* Bỏ dấu chấm đầu các thẻ li */
+.container li {
+  display: flex; /* đưa nội dung thẻ li lên cạnh nhau */
+  padding: 20px;
+  font-size: 20px;
+}
+.container li p {
+  margin-top: 5px;
+}
+/* CSS các thẻ i và đặt màu nền cho icon trong footer */
+.container i {
+  color: #199cdb;
+  font-size: 150%;
+}
+/* Đặt các thẻ li trên cùng 1 dòng bằng thuộc tính flex box */
+.container ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+/* Css căn chỉnh cho các lớp project-charter */
+.project-charter {
+  padding-left: 5px;
+}
+.cv-canhan .project-charter {
+  margin-top: 40px;
+  padding-top: 50px;
+  border-top: 1px solid #868e96;
+}
+.web-thucung .project-charter {
+  margin-top: 10px;
+  padding-top: 5px;
+  border-top: 1px solid #868e96;
+}
+.web-tintuc .project-charter {
+  margin-top: 35px;
+  padding-top: 30px;
+  border-top: 1px solid #868e96;
+}
+.project-charter a {
+  text-decoration: none;
+}

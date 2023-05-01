@@ -1,0 +1,96 @@
+@media only screen and (max-width: 992px) {
+  /* ẩn ảnh đại diện trên thanh navbar, chỉnh lại kích thước */
+  .ho-ten img {
+    display: none;
+  }
+  .ho-ten {
+    width: 70px;
+  }
+  /* thêm viền trái, phải cho các thẻ a trên thanh navbar */
+  .navbar-container a {
+    padding: 10px 10px;
+    border-left: 1px solid #ced4da;
+    border-right: 1px solid #ced4da;
+  }
+  .navbar-container .vien {
+    border-right: 1px solid #ced4da;
+  }
+  /* Đặt độ rộng thùng chứa 100% khung nhìn để căn giữa khối container-nghenghiep */
+  #job-info {
+    width: 100vw;
+  }
+  /* Tạo grid thông tin nghề nghiệp gồm 2 cột và 6 hàng */
+  .container-nghenghiep {
+    width: 85vw;
+    margin: 0 auto; /* căn giữa khối container-nghenghiep */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
+    gap: 10px 20px;
+  }
+  /* căn chỉnh các phần tử trong class grid-icon */
+  .grid-icon h1 {
+    align-self: end;
+  }
+  .grid-icon i {
+    align-self: start;
+  }
+  /* Đặt kích thước cho icon */
+  .bieutuong {
+    font-size: 35px;
+  }
+  /* chỉ định nội dung vào các vị trí grid cell */
+  .kinhnghiem {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding-bottom: 20px;
+  }
+  .hoatdong {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .kynang {
+    grid-column: 1/2;
+    grid-row: 3/5;
+  }
+  .hocvan {
+    grid-column: 2/3;
+    grid-row: 2/4;
+  }
+  .ngonngu {
+    grid-column: 1/2;
+    grid-row: 5/7;
+  }
+  .sothich {
+    grid-column: 2/3;
+    grid-row: 4/6;
+  }
+  /* Thay đổi lưới grid và đặt lại vị trí các mục */
+  .hang-icon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  .nauan {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .nau-an {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .chung-chi1 {
+    display: block;
+  }
+  .chung-chi2 {
+    display: block;
+  }
+  .chung-chi3 {
+    display: block;
+  }
+  /* css căn chỉnh lại danh sách ul */
+  .container-chungchi ul {
+    margin-left: -25px;
+  }
+}
